@@ -4,6 +4,7 @@
 
 :root {
   --bg: #eff1f5;
+  --bg-secondary: #dce0e8;
   --fg: #4c4f69;
   --fg-secondary: #6c6f85;
   --primary: #7287fd;
@@ -67,6 +68,10 @@ main {
   animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
+.drop-area.drag-over {
+  background-color: var(--bg-secondary);
+}
+
 .file-inp {
   display: none;
 }
@@ -79,7 +84,6 @@ main {
   top: 2em;
   display: flex;
   place-items: center;
-  background-color: var(--bg);
 }
 
 .qr-result:empty {
@@ -90,6 +94,8 @@ main {
   width: fit-content;
   height: fit-content;
   margin: auto;
+  background-color: var(--bg);
+  padding: 0 2.5em;
 }
 
 :any-link {
